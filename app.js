@@ -1,15 +1,15 @@
-const express = require("express");
-const morgan = require("morgan");
-const interviewRouter = require("./routes/interviewprep.js");
-const cors = require("cors");
+import express from "express";
+import logger from "morgan";
+import interviewRouter from "./routes/interviewprep.js";
+import cors from "cors";
 
 const app = express();
 const PORT = process.env.PORT ?? 3000;
 // Refactor this PORT variable to call on the environment variable instead!
 
-app.use(morgan("dev"));
-app.use(express.static("public"));
+app.use(logger("dev"));
 app.use(express.json());
+app.use(express.static("public"));
 app.use(cors("*"));
 
 app.use("/api/interviewprep", interviewRouter);
