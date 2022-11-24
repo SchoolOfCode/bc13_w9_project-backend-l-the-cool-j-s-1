@@ -1,6 +1,6 @@
 const { Pool } = require("pg");
 const pool = new Pool({
-  connectionString: process.env.POSTGRES_CONNECTION_URL,
+connectionString: process.env.POSTGRES_CONNECTION_URL,
 });
 
 module.exports = {
