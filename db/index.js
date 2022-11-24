@@ -10,6 +10,7 @@ if (undefined === connectionString) {
 
 export const pool = new pg.Pool({
   connectionString: connectionString,
+
 });
 // import { Pool } from "pg";
 // const pool = new Pool({
