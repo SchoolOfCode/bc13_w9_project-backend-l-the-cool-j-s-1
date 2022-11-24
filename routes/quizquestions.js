@@ -1,9 +1,7 @@
-const express = require("express");
-const router = express.Router();
+import { Router } from "express";
+const router = Router();
 
-const {
-    getQuizQuestions,
-} = require("../models/quizQuestions.js");
+import { getQuizQuestions } from "../models/quizQuestions.js";
 
 router.get("/", async (req, res) => {
     //Get all questions
@@ -12,4 +10,4 @@ router.get("/", async (req, res) => {
     res.status(200).json({ success: true, payload: question });
 });
 
-module.exports = router;
+export default router;

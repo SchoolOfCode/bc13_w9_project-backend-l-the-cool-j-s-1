@@ -1,6 +1,6 @@
-const { query } = require("../db/index.js");
+import { pool } from "../db/index.js";
 
-async function getQuizQuestions() {
+export async function getQuizQuestions() {
   // Query the database and return all questions
   // Use the query function from db/index.js
   // Call the query function and pass in the SQL query
@@ -11,6 +11,3 @@ async function getQuizQuestions() {
   return result.rows;
 }
 
-module.exports = {
-    getQuizQuestions,
-};
