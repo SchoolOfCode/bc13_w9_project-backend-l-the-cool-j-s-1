@@ -1,6 +1,7 @@
 const express = require("express");
 const morgan = require("morgan");
 const interviewRouter = require("./routes/interviewprep.js");
+const quizRouter = require("./routes/quizquestions")
 const cors = require("cors");
 
 const app = express();
@@ -13,6 +14,7 @@ app.use(express.json());
 app.use(cors("*"));
 
 app.use("/api/interviewprep", interviewRouter);
+app.use("/api/quizquestions", quizRouter);
 
 app.listen(PORT, function () {
   console.log(`Server listening on port ${PORT}`);
