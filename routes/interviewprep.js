@@ -1,9 +1,8 @@
-const express = require("express");
-const router = express.Router();
+import { Router } from "express";
+const router = Router();
 
-const {
-    getInterviewPrep,
-} = require("../models/interview.js");
+import {getInterviewPrep} from "../models/interview.js";
+
 
 router.get("/", async (req, res) => {
     //Get all 
@@ -12,4 +11,4 @@ router.get("/", async (req, res) => {
     res.status(200).json({ success: true, payload: interview });
 });
 
-module.exports = router;
+export default router;
