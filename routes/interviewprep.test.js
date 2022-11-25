@@ -21,18 +21,5 @@ describe("Get /interviewprep", function () {
       payload: expect.any(Array),
     });
   });
-  //
-
-  //   it("Get payload array structure is an object", async function () {
-  //     const response = await request(app).get("/users");
-
-  //     for (let i = 0; i < response.body.payload.length; i++) {
-  //       const userObject = response.body.payload[i];
-
-  //       expect(userObject).toStrictEqual({
-  //         id: expect.any(Number),
-  //         username: expect.any(String),
-  //       });
-  //     }
-  //   });
+    
 });
