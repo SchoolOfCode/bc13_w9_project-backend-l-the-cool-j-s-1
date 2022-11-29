@@ -41,7 +41,7 @@ Now, whenever you enter `npm run dev` or `npm start`, the `dotenv` package will 
 
 ## The .env file and .gitignore
 
-`.env` has been added to your `.gitignore` file. You don't want sensitive database credentials being pushed up to GitHub!
+`.env` has to be added to your `.gitignore` file. You don't want sensitive database credentials being pushed up to GitHub!
 
 ```
 node_modules
