@@ -1,4 +1,3 @@
-# API planning request for Weekly review
 
 ## Description
 
