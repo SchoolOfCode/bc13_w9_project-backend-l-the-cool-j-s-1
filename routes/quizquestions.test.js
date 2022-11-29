@@ -4,7 +4,7 @@ import request from "supertest";
 describe("Get /quizquestions", function () {
   it("Get all quizquestions", async function () {
     const response = await request(app).get("/quizquestions");
-    console.log(response);
+    // console.log(response);
   });
   it("Get status code", async function () {
     const response = await request(app).get("/quizquestions");

@@ -4,7 +4,7 @@ import request from "supertest";
 describe("Get /interviewprep", function () {
   it("Get all interview", async function () {
     const response = await request(app).get("/interviewprep");
-    console.log(response.body.payload);
+    // console.log(response.body.payload);
   });
   it("Get status code", async function () {
     const response = await request(app).get("/interviewprep");
@@ -21,5 +21,4 @@ describe("Get /interviewprep", function () {
       payload: expect.any(Array),
     });
   });
-    
 });

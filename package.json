@@ -15,7 +15,7 @@
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon -r dotenv/config app.js",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --setupFiles dotenv/config --watchAll"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --setupFiles dotenv/config --watchAll --detectOpenHandles"
   },
   "devDependencies": {
     "dotenv": "^16.0.3",
